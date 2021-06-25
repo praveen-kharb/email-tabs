@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/1f280ffe0a.js" crossorigin="anonymous"></script>
+
+
+
+  <script src="https://cdn.tiny.cloud/1/ivjf1i749q2bapl9e8sr5qqkc4zjwq5cfqba2pgp3ewaxtnq/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+  <script src="tiny.js">  </script>
+
+</head>
+
+<body>
+  <div class="main-container comtainer-fluid w-100 bg-light">
+    <div class="inner-container row d-flex justify-content-space-between">
+      <div class="tab-container nav-container col-3">
+        <ul class="tab-nav py-2 mx-auto nav-pills nav-stacked">
+          <li class="active">Email Confirmation</li>
+          <li class="">Email Cancellation</li>
+          <li class="">Email Reschedule</li>
+          <li class="">Email Reminder</li>
+          <li class="">Email followup</li>
+        </ul>
+      </div>
+
+      <div class="text-part col-6">
+        <div class="Confirmation active" id="row">
+          <div class="heading-div">
+            <h1 class="heading1">Confirmation Email Subject</h1>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="text-content">
+            <h1 class="heading1">Confirmation Email Body</h1>
+            <div class="form-group">
+              <form method="post">
+                <textarea class="editor"></textarea>
+              </form>
+            </div>
+          </div>
+          <div class="btn-div">
+            <button type="button" class="btn btn-danger w-100">Update</button>
+          </div>
+        </div>
+
+        <div class="Confirmation" id="row">
+          <div class="heading-div">
+            <h1 class="heading1">Cancellation Email Subject</h1>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="text-content">
+            <h1 class="heading1"> Cancellation Email Body</h1>
+            <div class="form-group">
+              <form method="post">
+                <textarea class="editor"></textarea>
+              </form>
+            </div>
+          </div>
+          <div class="btn-div">
+            <button type="button" class="btn btn-danger w-100">Update</button>
+          </div>
+        </div>
+
+        <div class="Confirmation" id="row">
+          <div class="heading-div">
+            <h1 class="heading1">Reschedule Email Subject</h1>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="text-content">
+            <h1 class="heading1">Reschedule Email Body</h1>
+            <div class="form-group">
+              <form method="post">
+                <textarea class="editor"></textarea>
+              </form>
+            </div>
+            <div class="btn-div">
+              <button type="button" class="btn btn-danger w-100">Update</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="Confirmation" id="row">
+          
+            <div class="input-on-off d-flex justify-content-space-between align-items-center">
+              <h1 class="heading1">
+                Email Reminder <i class="fas fa-plus-circle temp"></i>
+              </h1>
+              <label class="toggle go">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            
+            <div class="good">
+              <div class="timer">
+              
+                <div class="a1">
+                  <div class="time-cut">
+                    <input type="email" class="form-control col-2 mr-2" value="1" id="exampleInputEmail1"
+                      aria-describedby="emailHelp">
+                    <select class="form-control col-7" id="exampleFormControlSelect1">
+                      <option>Hour(s) Before</option>
+                      <option>Day(s) Before</option>
+                      <option>Minute(s) Before</option>
+                    </select> 
+                  </div>
+                </div>
+                <!-- <div class="a1"></div> -->
+                <!-- <div class="a2"></div> -->
+
+              </div>  
+
+         
+          <div class="text-content">
+            <div class="heading-div">
+              <h1 class="heading1">Reminder Email Subject</h1>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <h1 class="heading1">Reminder Email Body</h1>
+            <div class="form-group">
+              <form method="post">
+                <textarea class="editor"></textarea>
+              </form>
+            </div>
+          </div>
+          <div class="btn-div" >
+            <button type="button" class="btn btn-danger w-100" >Update Email Details</button>
+          </div>
+        </div>
+      </div>
+        <div class="Confirmation" id="row">
+      
+            <div class="input-on-off d-flex justify-content-space-between align-items-center">
+              <h1 class="heading1">
+                Email Followup 
+              </h1>
+              <label class="toggle toggl">
+         
+                <input class="input" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="notgood">
+            <div class="timer">
+              <div class="time w-100 d-flex justify-content-space-between align-items-center">
+                <div class="timeCut">
+                  <input type="email" class="form-control col-2 mr-2" value="1" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                  <select class="form-control col-7" id="exampleFormControlSelect1">
+                    <option>Hour(s) After</option>
+                    <option>Day(s) After</option>
+                    <option>Minute(s) After</option>
+                  </select> 
+                </div>
+			</div>
+         
+          <div class="text-content">
+            <div class="heading-div">
+              <h1 class="heading1">Followup Email Subject</h1>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <h1 class="heading1">Followup Email Body</h1>
+            <div class="form-group">
+              <form method="post">
+                <textarea class="editor"></textarea>
+              </form>
+            </div>
+          </div>
+
+          <div class="btn-div">
+            <button type="button" class="btn btn-danger w-100">Update Email Details</button>
+          </div>
+        </div>
+      </div>
+	</div>
+</div>
+      <div class="tags col-3">
+        <div class="inner-tags">
+          <h1 class="heading1">Tags</h1>
+          <p class="para">For Example: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, adipisci vitae.
+            Doloribus maiores dolorem, numquam alias odit cupiditate voluptatem accusamus molestias reiciendis obcaecati
+            eligendi unde, atque praesentium quibusdam repellat magni.
+          </p>
+
+          <h5 class="heading5">Buyer Name <span>{{name}}</span></h5>
+          <h5 class="heading5">Buyer Email <span>{{email}}</span></h5>
+          <h5 class="heading5">Product <span>{{product_name}}</span></h5>
+          <h5 class="heading5">Price <span>{{price}}</span></h5>
+          <h5 class="heading5">Meeting Duration <span>{{duration}}</span></h5>
+          <h5 class="heading5">Meeting Date <span>{{date}}</span></h5>
+          <h5 class="heading5">Meeting Slot <span>{{slot}}</span></h5>
+          <h5 class="heading5">User Timezone <span>{{user_timezone}}</span></h5>
+          <h5 class="heading5">Seller Name <span>{{seller_name}}</span></h5>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
